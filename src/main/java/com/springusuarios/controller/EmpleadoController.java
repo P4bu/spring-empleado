@@ -39,7 +39,7 @@ public class EmpleadoController {
     }
 
     //elimina un empleado por su id
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/empleados/delete/{id}")
     public void delete(@PathVariable("id") Long id){
         empleadoRepository.deleteById(id);
     }
